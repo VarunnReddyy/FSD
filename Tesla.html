@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tesla</title><style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+div {
+  height: 100px;
+
+  background-color: powderblue;
+}
+#myBtn:hover {
+  background-color: #555;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head>
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<div style="background-color:black;color:white;padding:30px"><h1>Tesla Inc</h1></div>
+<div style="background-color:lightgrey;padding:30px 30px 2500px"><h2>What is Tesla?</h2>
+<p>
+    Tesla, Inc. (/ˈtɛslə/ TESS-lə[b]) is an American multinational automotive and clean energy company headquartered in Austin,
+     Texas. Tesla designs and manufactures electric vehicles (electric cars and trucks),
+      battery energy storage from home to grid-scale, solar panels and solar roof tiles, and related products and services. 
+      Tesla is one of the world's most valuable companies and remains the world's most valuable automaker with a market 
+      capitalization of more than US$840 billion. In 2021, the company had the most worldwide sales of battery electric 
+      vehicles and plug-in electric vehicles, capturing 21% of the battery-electric (purely electric) market and 14% of
+       the plug-in market (which includes plug-in hybrids). Through its subsidiary Tesla Energy, the company develops and is 
+       a major installer of photovoltaic systems in the United States. Tesla Energy is also one of the largest global suppliers 
+       of battery energy storage systems, with 3.99 gigawatt-hours (GWh) installed in 2021.
+</p>
+<h3>History</h3>
+<p>
+    The company was incorporated as Tesla Motors, Inc. on July 1, 2003, by Martin Eberhard and Marc Tarpenning.
+    Eberhard and Tarpenning served as CEO and CFO, respectively.Eberhard said he wanted to build "a car manufacturer 
+    that is also a technology company",with its core technologies as "the battery, the computer software, and the proprietary 
+    motor".Ian Wright was Tesla's third employee, joining a few months later.In February 2004, the company raised $7.5 million in series 
+    A funding, including $6.5 million from Elon Musk, who had received $100 million from the sale of his interest in PayPal two years earlier. 
+    Musk became the chairman of the board of directors and the largest shareholder of Tesla.J. B. Straubel joined Tesla in May 2004 as chief technical officer.
+A lawsuit settlement agreed to by Eberhard and Tesla in September 2009 allows all five – Eberhard, Tarpenning, Wright, Musk, and Straubel – to call themselves co-founders.
+</p>
+<br>
+<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Tesla_Motors.svg/164px-Tesla_Motors.svg.png" alt="Tesla" class=
+"center">
+<h3>Automotive Products</h3>
+<h4>Model S</h4>
+<p>The Model S is a five-door liftback sedan. Deliveries began on June 22, 2012.
+    The car became the first electric vehicle to top the monthly sales ranking in any country, 
+    when it achieved first place in the Norwegian new car sales list in September 2013.
+    The Model S won the 2013 Motor Trend Car of the Year,[38] the 2013 "World Green Car",Automobile magazine's 2013 "Car of the Year",
+    Time magazine's Best 25 Inventions of the Year 2012 award,[106] as well as the 2019 Motor Trend "Ultimate Car of the Year".
+    The Model S was the best-selling plug-in electric car worldwide for the years 2015 and 2016, selling an estimated 50,931 units in 2016.
+    By the end of 2017, it was the world's second best selling plug-in electric car in history (after the Nissan Leaf), with global sales of 200,000 units.
+    In June 2020, Tesla announced that the Model S Long Range Plus had an EPA range of 402 miles (647 km), the highest of any battery electric vehicle at the time</p>
+<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/2018_Tesla_Model_S_75D.jpg/330px-2018_Tesla_Model_S_75D.jpg" alt="Model S" class="center">
+<h4>Model X</h4>
+<p>
+    The Tesla Model X is a mid-size crossover SUV. It is offered in 5-, 6- and 7-passenger configurations. The Model X was developed from the full-sized
+    sedan platform of the Model S. The rear passenger doors open vertically with an articulating "falcon-wing" design.
+    Deliveries started in September 2015.In 2016, after one full year on the market, the Model X ranked seventh among the world's best-selling plug-in cars.
+    The United States is its main market, with an estimated 57,327 units sold through September 2018.
+</p>
+<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/2017_Tesla_Model_X_100D_Front.jpg/330px-2017_Tesla_Model_X_100D_Front.jpg"alt="Model S" class="center">
+</div>
+
+<script>
+let mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
